@@ -1,8 +1,10 @@
 ---
 layout: post
 author: Patrick
+excerpt_separator: <!--more-->
 ---
 <h2>En este post explicaré como alojar nuestra web personal en GitHub Pages.</h2>
+<!--more-->
 <p>
     <b>1.</b> Crear nuestro repositorio en GitHub utilizando la siguiente sintaxis: "tu-nombre.github.io".<br/>
 <img src="/images/gpages1.png" alt="Primer paso"><br/>
