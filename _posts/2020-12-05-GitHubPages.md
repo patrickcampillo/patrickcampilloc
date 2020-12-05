@@ -15,7 +15,7 @@ author: Patrick
     <li><b>git add --all, indicamos que queremos añadir a nuestro repositorio todo lo que hay en el reppositorio clonado.</b></li>
     <li><b>git commit -m "Initial commit"</b>, mediante este comando guardaremos las modificaciones indicando la razón mediante un pequeño comentario.</li>
     <li><b>git push -u origin master</b>, utilizando este comando subiremos los archivos, tras ejecutarlo nos pedriá nuestras credenciales de GitHub por seguridad.</li>
-</ul><br/>
-<img src="assets/img/githubpages/4.png" alt="Cuarto paso"><br/>
+</ul>
+<img src="./assets/img/githubpages/4.png" alt="Cuarto paso"><br/>
 Y comprobaremos que todo ha salido de forma correcta, introduciendo la dirección de nuestro repositorio en nuestro buscador.<br/>
 <img src="assets/img/githubpages/5.png" alt="Comprobación">
