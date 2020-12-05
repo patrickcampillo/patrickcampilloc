@@ -5,7 +5,7 @@ author: Patrick
 <b>En este post explicaré como alojar nuestra web personal en GitHub Pages.</b>
 </br>
 1. Crear nuestro repositorio en GitHub utilizando la siguiente sintaxis: "tu-nombre.github.io".<br/>
-<img src="assets/img/githubpages/1.png" alt="Primer paso"><br/>
+<img src="patrickcampillo.github.io/assets/img/githubpages/1.png" alt="Primer paso"><br/>
 2. Ahora deberemos clonar este repositorio en nuestro equipo local. En el lugar que deseemos, en mi caso cree la carpeta github para facilitar su identificación. Mediante el comando <b>"git clone [url de nuestro repositorio]"</b>.<br/>
 <img src="assets/img/githubpages/2.png" alt="Segundo paso"><br/>
 3. Una vez clonado podremos crear, editar, mover y eliminar los archivos que deseemos. Como ejemplo, crearé un archivo <b>"index.html"</b> para mostrar el funcionamiento de GitHub Pages.<br/>
