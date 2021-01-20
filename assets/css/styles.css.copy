@@ -1,0 +1,17 @@
+---
+---
+@import "main";
+.post {
+    margin-left: 150px;
+    margin-bottom: -70px;
+    font: 700 4em "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: underline;
+}
+.style{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    text-align: justify;
+    font: 1em "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
