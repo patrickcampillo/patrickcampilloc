@@ -7,7 +7,7 @@ typora-copy-images-to: ../images/
 typora-root-url: ../
 ---
 
-## TAREA 1
+## **TAREA 1**
 
 ### <u>Directorios Sites-available y Sites-enabled</u>
 
@@ -55,7 +55,7 @@ typora-root-url: ../
 
 
 
-## TAREA 2
+## **TAREA 2**
 
 ### <u>Archivo de configuración con Alias</u>
 
@@ -75,7 +75,7 @@ typora-root-url: ../
 
 
 
-## TAREA 3
+## **TAREA 3**
 
 ### <u>Fichero de configuración con Redirect</u>
 
@@ -95,7 +95,7 @@ typora-root-url: ../
 
 
 
-## TAREA 4
+## **TAREA 4**
 
 ### <u>Fichero de configuración con error personalizado</u>
 
