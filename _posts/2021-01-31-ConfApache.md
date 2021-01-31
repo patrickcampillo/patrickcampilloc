@@ -7,9 +7,9 @@ typora-copy-images-to: ../images/
 typora-root-url: ../
 ---
 
-## **TAREA 1**
+## TAREA 1
 
-### <u>Directorios Sites-available y Sites-enabled</u>
+#### <u>Directorios Sites-available y Sites-enabled</u>
 
 ![](/images/confapache/1.PNG)
 
@@ -19,7 +19,7 @@ typora-root-url: ../
 
 
 
-### <u>Directorio del Document-Root</u>
+#### <u>Directorio del Document-Root</u>
 
 ![](/images/confapache/3.PNG)
 
@@ -27,7 +27,7 @@ typora-root-url: ../
 
 
 
-### <u>Configuración de los hosts virtuales</u>
+#### <u>Configuración de los hosts virtuales</u>
 
 ![](/images/confapache/4.PNG)
 
@@ -37,7 +37,7 @@ typora-root-url: ../
 
 
 
-### <u>Fichero /etc/hosts</u>
+#### <u>Fichero /etc/hosts</u>
 
 ![](/images/confapache/6.PNG)
 
@@ -45,7 +45,7 @@ typora-root-url: ../
 
 
 
-### <u>Comprobación web</u>
+#### <u>Comprobación web</u>
 
 ![](/images/confapache/7.PNG)
 
@@ -55,9 +55,9 @@ typora-root-url: ../
 
 
 
-## **TAREA 2**
+## TAREA 2
 
-### <u>Archivo de configuración con Alias</u>
+#### <u>Archivo de configuración con Alias</u>
 
 ![](/images/confapache/8.PNG)
 
@@ -65,7 +65,7 @@ typora-root-url: ../
 
 
 
-### <u>Comprobación del Alias</u>
+#### <u>Comprobación del Alias</u>
 
 ![](/images/confapache/9.PNG)
 
@@ -75,9 +75,9 @@ typora-root-url: ../
 
 
 
-## **TAREA 3**
+## TAREA 3
 
-### <u>Fichero de configuración con Redirect</u>
+#### <u>Fichero de configuración con Redirect</u>
 
 ![](/images/confapache/10.PNG)
 
@@ -85,7 +85,7 @@ typora-root-url: ../
 
 
 
-### <u>Comprobación Redirect</u>
+#### <u>Comprobación Redirect</u>
 
 ![](/images/confapache/11.PNG)
 
@@ -95,9 +95,9 @@ typora-root-url: ../
 
 
 
-## **TAREA 4**
+## TAREA 4
 
-### <u>Fichero de configuración con error personalizado</u>
+#### <u>Fichero de configuración con error personalizado</u>
 
 ![](/images/confapache/12.PNG)
 
