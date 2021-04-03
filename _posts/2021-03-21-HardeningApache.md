@@ -51,6 +51,42 @@ Y como podremos observar al reiniciar el servicio, ya solo mostrará que se trat
 
 
 
+## HSTS y CSP
+
+**HSTS** es una cabecera, que le indica al navegador, que durante un tiempo establecido sólo puede actuar mediante HTTPS. Y la cabecera **CSP**, le indica al navegador, desde que origen puede cargar contenido. Ya sean imágenes, scripts, etc. Para aplicarlas,  solo deberemos añadir estas dos siguientes líneas a nuestro archivo de host virtual por defecto:
+
+![](/images/hardeningapache/7.PNG)
+
+
+
+Y además, para que el navegador pueda verificar al servidor, deberemos crear certificados autofirmados y habilitar el módulo **SSL** de **Apache**. Y, como tenemos que realizarlo en una imagen, he decidido utilizar los certificados que suelen llevar por defecto, para estas situaciones.
+
+![](/images/hardeningapache/12.PNG)
+
+
+
+Y utilizando, el script `run.sh`, le indicaremos que deberá escuchar en dos puertos, uno para el 80 y otro para el 443. Pero como con el **HSTS**, le hemos indicado que solo permitiremos al navegador mostrar el contenido mediante HTTPS, si se realiza alguna búsqueda al puerto 80, este nos informará de que el servidor esta diseñado para solo manejar tráfico por el puerto 443.
+
+
+
+Script `run.sh`:
+
+![](/images/hardeningapache/8.PNG)
+
+
+
+Comprobación de XSS en la página post, enviando el código `<script>alert(1)</script>`.
+
+![](/images/hardeningapache/9.PNG)
+
+
+
+
+
+
+
+
+
 ## Web Application Firewall (WAF) con OWASP
 
 Para añadir más seguridad a nuestro servidor, utilizaremos dos reglas de seguridad que tiene la configuración **OWASP**. Para esto, deberemos instalar el paquete `libapache2-mod-security2`. El cual, al configurarlo e instalarlo, nos aplicará dos reglas para fortificar más nuestro servidor.
@@ -65,11 +101,23 @@ Una vez instalado, deberemos modificar el valor de "`SecRuleEngine`" a "`On`", d
 
 
 
-Tras esto reiniciamos el servidor y habremos aplicado las reglas.
+Tras esto reiniciamos el servidor y habremos aplicado las reglas. Ya que este, ya viene configurado con 3  archivos de configuración, que almacenan la mayoría de reglas importantes a la hora de implantar el **OWASP**. De esta forma, si deseáramos añadir más reglas, solo tendríamos que añadirlas a esta carpeta. Esta carpeta se encuentra en la ruta `/etc/modsecurity/crs`, y contiene 3 archivos: `crs-setup.conf`, `RQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf` y `RESPONSE-999-EXCLUSION-RULES-AFTER-CRS.conf`.
+
+![](/images/hardeningapache/10.PNG)
 
 
 
+He intentado seguir la guía que nos has marcado, pero al crearse ya esta carpeta en la instalación del **modsecurity**, al intentar reiniciar **Apache**, me provocaba errores porque encontraba **IDs** repetidos, o si borraba esta carpeta y creaba la llamada **rules**, me saltaba un error de que no encontraba estos archivos. Por lo que al final, he optado por dejarlo como viene por defecto. Ya que el resultado es aparentemente el mismo, como muestro en las pruebas siguientes.
 
+`?testparam=test`
+
+![](/images/hardeningapache/11.PNG)
+
+
+
+`?exec=/bin/bash`
+
+![](/images/hardeningapache/11-1.PNG)
 
 
 
