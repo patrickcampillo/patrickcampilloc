@@ -23,7 +23,7 @@ Con el primero, nos añadiremos al grupo **Docker**, y con el segundo actualizar
 
 
 
-## 
+
 
 ## Seguridad en el demonio
 
