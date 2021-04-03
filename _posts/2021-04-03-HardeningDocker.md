@@ -97,7 +97,7 @@ Y podremos observar que tenemos acceso a las imágenes que se encuentran fuera d
 
 Una práctica muy útil a la hora de trabajar con imágenes de **Docker Hub**, es poder verificar que vulnerabilidades pueden poseer, ya sea por mala configuración, versiones no actualizadas, etc. Esto nos lo permite comprobar el propio **Docker Hub**, pero mediante la versión **Pro**. Pero, existen una gran cantidad de posibilidades gratuitas que realizan la misma función. Como es el caso de **Trivy**. Mediante el cual, podemos realizar un escaneo de vulnerabilidades de la gran mayoría de imágenes que se encuentran en **Docker Hub**. En este caso, ya que no he encontrado ninguna interesante de **WordPress**, he realizado el análisis de un **Alpine** con **Git**.
 
-![](/images/hardendocker/9.PNG)
+![](/images/hardendocker/9.png)
 
 
 
